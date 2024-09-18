@@ -15,7 +15,7 @@ The code is divided into 3 main components:
 2. [Prompt optimization](./src/prompt_optimization.py): A script that optimizes the judge's CoT and prompts to improve its performance in judging the harmfulness of a given conversation
 3. [Multifaceted judge](./src/multifaceted_judge.py): A judge that uses a combination of metrics (harmfulness, relevance and informativeness) to judge the harmfulness of a given content
 
->[!INFO]
+> [!NOTE]
 > The dataset used in this evaluation is the data produced during the [HarmBench evaluation](https://github.com/romaingrx/Harmbench) of the [Red Teamer Mistral Nemo](https://github.com/romaingrx/red-teamer-mistral-nemo) against [zephyr-7b](https://huggingface.co/HuggingFaceH4/zephyr-7b-beta).
 
 ## Basic judge
