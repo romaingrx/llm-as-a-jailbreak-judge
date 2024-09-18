@@ -1,0 +1,21 @@
+seed: 42
+
+use_phoenix: false
+
+wandb:
+  disabled: false
+  project: "llm-as-a-judge"
+
+base_url: "http://localhost:8000/v1"
+model: "mistralai/Mistral-Nemo-Instruct-2407"
+
+dataset:
+  file: "./data/eval_harmbench.csv"
+  train_test_split: 0.8
+  limit: null
+
+prompt_optim:
+  action: "evaluate" # or "compile"
+  save_file: "judges/judge_mipro_compiled.json"
+  optimize:
+    from_precompiled: false
